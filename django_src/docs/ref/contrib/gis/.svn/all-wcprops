@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/13398/django/trunk/docs/ref/contrib/gis
+END
+measure.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/measure.txt
+END
+commands.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/commands.txt
+END
+create_template_postgis-1.4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/13398/django/trunk/docs/ref/contrib/gis/create_template_postgis-1.4.sh
+END
+create_template_postgis-1.5.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/12942/django/trunk/docs/ref/contrib/gis/create_template_postgis-1.5.sh
+END
+tutorial.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/13293/django/trunk/docs/ref/contrib/gis/tutorial.txt
+END
+geoip.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/13098/django/trunk/docs/ref/contrib/gis/geoip.txt
+END
+install.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/13398/django/trunk/docs/ref/contrib/gis/install.txt
+END
+model-api.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12890/django/trunk/docs/ref/contrib/gis/model-api.txt
+END
+gdal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/gdal.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/index.txt
+END
+testing.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/testing.txt
+END
+ogrinspect.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/ogrinspect.txt
+END
+deployment.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/deployment.txt
+END
+create_template_postgis-debian.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/create_template_postgis-debian.sh
+END
+sitemaps.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/sitemaps.txt
+END
+feeds.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/feeds.txt
+END
+layermapping.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12942/django/trunk/docs/ref/contrib/gis/layermapping.txt
+END
+admin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12995/django/trunk/docs/ref/contrib/gis/admin.txt
+END
+db-api.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/13097/django/trunk/docs/ref/contrib/gis/db-api.txt
+END
+geos.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/geos.txt
+END
+geoquerysets.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/geoquerysets.txt
+END
+create_template_postgis-1.3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/create_template_postgis-1.3.sh
+END
+utils.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12856/django/trunk/docs/ref/contrib/gis/utils.txt
+END

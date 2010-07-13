@@ -1,0 +1,119 @@
+html {
+	background-color: #333;
+	color: white;
+	margin: 50px 50px;
+	font-family: 'Droid Sans', sans-serif; 
+}
+
+#content {
+	margin-top: 20px;
+}
+
+#fx_chrome {
+	position: relative;
+	z-index: -1;
+	opacity: .15;
+}
+
+.button {
+  background-color: #333;
+  border:medium none;
+  color:#AAA;
+  cursor:pointer;
+  font-size:11px;
+  padding:6px 9px;
+  text-decoration:none;
+  border-top: 1px dotted #555;  
+  border-bottom: 1px dotted #555;  
+  border-left: 1px dotted #555;    
+}
+
+.button.active{
+  background-color: #AAA; 
+  color: #444;
+  border: none;
+}
+
+.button.inactive {
+	color: #414141; 
+  border-left: 1px dotted #444; 	
+}
+
+.button.left {
+	margin-left: 5px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-bottomleft: 2px; 
+}
+
+.button.right {
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;  
+  border-right: 1px solid #555;    
+}
+
+#navigation_toolbar {
+	position: absolute; 
+	top: 293px; 
+	left: 78px; 
+	width: 100%;
+}
+
+.overlay {
+	position: relative;
+	float: left;
+	width: 22px;
+	height: 22px;
+	background-color: #2171B5;
+	opacity: .5;
+}
+
+#back { top: -5px; width: 32px; height: 32px; -moz-border-radius: 20px; -webkit-border-radius: 20px; }
+#forward { left: 1px; width: 25px; -moz-border-radius: 0 8px 8px 0; -webkit-border-radius: 0 8px 8px 0; }
+#reload { left: 25px; }
+#stop { left: 37px; }
+#home { left: 49px; }
+
+#site_id { left: 57px; width: 30px; -moz-border-radius: 8px 0 0 8px; -webkit-border-radius: 0 8px 8px 0;}
+#location_bar { left: 58px; width: 508px; }
+#rss { left: 69px; top: 3px; height: 16px; width: 16px; }
+#bookmark_star { left: 73px; top: 3px; height: 16px; width: 16px; }
+#most_visited_drop_down { left: 81px; top: 7px; height: 8px; width: 8px; }
+
+#search_engine_drop_down { left: 93px; width: 32px; }
+#search_bar { left: 94px; width: 143px; }
+#search_go_button { left: 95px; }
+
+#location_bar_go_button { top: 30px; left: -145px; height: 13px; width: 13px; }
+
+h1 {
+  font-size: 40px;
+  color: #AAA; 
+	margin-bottom: 7px;
+}
+
+h2 {
+	font-size: 14px;
+	color: #666;
+	margin: 0 0 30px 2px;
+}
+
+a {
+	color: #777;
+}
+
+ul {
+	float: left;
+	margin-right: 40px;
+}
+
+li {
+	display: inline;
+	margin-left: -4px;
+}
+
+li span {
+	font-size: 15px;
+	color: #888;
+	margin-right: 12px;
+	margin-left: 5px;
+}

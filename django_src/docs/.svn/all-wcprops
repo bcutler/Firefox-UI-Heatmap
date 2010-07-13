@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/13401/django/trunk/docs
+END
+glossary.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/10303/django/trunk/docs/glossary.txt
+END
+index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/13180/django/trunk/docs/index.txt
+END
+contents.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/8506/django/trunk/docs/contents.txt
+END
+conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/13287/django/trunk/docs/conf.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/13135/django/trunk/docs/Makefile
+END

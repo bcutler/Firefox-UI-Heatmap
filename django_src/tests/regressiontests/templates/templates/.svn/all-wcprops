@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/13295/django/trunk/tests/regressiontests/templates/templates
+END
+test_extends_error.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/12792/django/trunk/tests/regressiontests/templates/templates/test_extends_error.html
+END
+broken_base.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/12792/django/trunk/tests/regressiontests/templates/templates/broken_base.html
+END

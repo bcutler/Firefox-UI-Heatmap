@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/13323/django/trunk/tests/regressiontests/utils
+END
+termcolors.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12009/django/trunk/tests/regressiontests/utils/termcolors.py
+END
+datetime_safe.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/12423/django/trunk/tests/regressiontests/utils/datetime_safe.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12762/django/trunk/tests/regressiontests/utils/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/5876/django/trunk/tests/regressiontests/utils/__init__.py
+END
+functional.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12104/django/trunk/tests/regressiontests/utils/functional.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/13094/django/trunk/tests/regressiontests/utils/tests.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12762/django/trunk/tests/regressiontests/utils/decorators.py
+END
+tzinfo.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12164/django/trunk/tests/regressiontests/utils/tzinfo.py
+END
+feedgenerator.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/12338/django/trunk/tests/regressiontests/utils/feedgenerator.py
+END
+datastructures.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/8059/django/trunk/tests/regressiontests/utils/datastructures.py
+END
+timesince.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/13323/django/trunk/tests/regressiontests/utils/timesince.py
+END
+module_loading.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/13095/django/trunk/tests/regressiontests/utils/module_loading.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5876/django/trunk/tests/regressiontests/utils/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12762/django/trunk/tests/regressiontests/utils/urls.py
+END
+dateformat.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/11705/django/trunk/tests/regressiontests/utils/dateformat.py
+END

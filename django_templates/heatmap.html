@@ -1,0 +1,82 @@
+{% extends "heatmap_base.html" %}
+
+{% block header %}
+	<h1>Firefox Main Window Heatmap</h1>
+	<h2>Based on ____ Test Pilot submissions from 5 days in _____ 2010 - <a href='' >Study details</a></h2>
+{% endblock %}
+
+{% block filters %}
+	<ul>
+		<li><a href='' class="button left active">Used by x% of users</a></li>
+		<li><a href='' class="button right">Clicks per user</a></li>
+	</ul>
+	
+	<ul>
+		<li><a href='' class="button left active">All OS</a></li>
+		<li><a href='' class="button">Windows</a></li>
+		<li><a href='' class="button">OS X</a></li>		
+		<li><a href='' class="button right">Linux</a></li>
+	</ul>
+
+	<ul>
+		<li><a href='' class="button left active">All Skills</a></li>
+		<li><a href='' class="button">Beginner</a></li>
+		<li><a href='' class="button">Intermediate</a></li>		
+		<li><a href='' class="button right">Advanced</a></li>
+	</ul>	
+	
+	<div style='height: 60px; clear; both;'></div>
+{% endblock %}
+
+
+{% block content %}
+	<div id='content'>		
+		<img src='media/img/fx_36_win.png' id='fx_chrome' />	
+		<div id='navigation_toolbar'>
+			<div id='back' class='overlay'></div><div id='back_label' class='overlay_label'></div>
+			<div id='forward' class='overlay'></div><div id='forward_label' class='overlay_label'></div>	
+			<div id='reload' class='overlay'></div><div id='reload_label' class='overlay_label'></div>
+			<div id='stop' class='overlay'></div><div id='stop_label' class='overlay_label'></div>
+			<div id='home' class='overlay'></div><div id='home_label' class='overlay_label'></div>	
+		
+			<div id='site_id' class='overlay'></div><div id='site_id_label' class='overlay_label'></div>						
+			<div id='location_bar' class='overlay'></div><div id='location_bar_label' class='overlay_label'></div>												
+			<div id='rss' class='overlay'></div><div id='rss_label' class='overlay_label'></div>		
+			<div id='bookmark_star' class='overlay'></div><div id='bookmark_star_label' class='overlay_label'></div>	
+			<div id='most_visited_drop_down' class='overlay'></div><div id='most_visited_drop_down_label' class='overlay_label'></div>	
+			
+			<div id='search_engine_drop_down' class='overlay'></div><div id='search_engine_drop_down_label' class='overlay_label'></div>								
+			<div id='search_bar' class='overlay'></div><div id='search_bar_label' class='overlay_label'></div>	
+			<div id='search_go_button' class='overlay'></div><div id='search_go_button_label' class='overlay_label'></div>														
+			
+			<div id='location_bar_go_button' class='overlay'></div><div id='location_bar_go_button_label' class='overlay_label'></div>											
+		</div>	
+		
+		<div id='bookmark_bar'>
+			<div id='bookmarks_bar' class='overlay'></div><div id='bookmarks_bar_label' class='overlay_label'></div>														
+		</div>							
+
+		<div id='tab_strip'>
+			<div id='tab_scroll_left' class='overlay'></div><div id='tab_scroll_left_label' class='overlay_label'></div>														
+			<div id='tab_scroll_right' class='overlay'></div><div id='tab_scroll_right_label' class='overlay_label'></div>														
+			<div id='new_tab' class='overlay'></div><div id='new_tab_label' class='overlay_label'></div>														
+			<div id='list_all_tabs' class='overlay'></div><div id='list_all_tabs_label' class='overlay_label'></div>																						
+		</div>
+		
+		<div id='vertical_scroll'>
+			<div id='scroll_vertical_up' class='overlay'></div><div id='scroll_vertical_up_label' class='overlay_label'></div>
+			<div id='scroll_vertical_bar' class='overlay'></div><div id='scroll_vertical_bar_label' class='overlay_label'></div>
+			<div id='scroll_vertical_down' class='overlay'></div><div id='scroll_vertical_down_label' class='overlay_label'></div>																													
+		</div>			
+
+		<div id='horizontal_scroll'>
+			<div id='scroll_horizontal_up' class='overlay'></div><div id='scroll_horizontal_up_label' class='overlay_label'></div>
+			<div id='scroll_horizontal_bar' class='overlay'></div><div id='scroll_horizontal_bar_label' class='overlay_label'></div>
+			<div id='scroll_horizontal_down' class='overlay'></div><div id='scroll_horizontal_down_label' class='overlay_label'></div>								
+		</div>
+		
+		<div id='status_bar'>
+			<div id='' class='overlay'></div><div id='_label' class='overlay_label'></div>					
+		</div>							
+	</div>				
+{% endblock %}

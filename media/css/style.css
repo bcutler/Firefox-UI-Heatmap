@@ -1,0 +1,108 @@
+html {
+	background-color: #333;
+	color: white;
+	margin: 50px 50px;
+	font-family: 'Droid Sans', sans-serif; 
+}
+
+#content {
+	margin-top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #AAA; 
+	margin-bottom: 7px;
+}
+
+h2 {
+	font-size: 14px;
+	color: #666;
+	margin: 0 0 30px 2px;
+}
+
+.tab {
+  background-color: #333;
+  border:medium none;
+  color:#AAA;
+  cursor:pointer;
+  font-size:11px;
+  padding:6px 20px;
+  text-decoration:none;
+  border-top: 1px dotted #555;  
+  border-bottom: 1px dotted #555;  
+  border-left: 1px dotted #555;    
+}
+
+.tab.right {
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;  
+  border-right: 1px solid #555;    
+}
+
+.button {
+  background-color: #333;
+  border:medium none;
+  color:#AAA;
+  cursor:pointer;
+  font-size:11px;
+  padding:6px 9px;
+  text-decoration:none;
+  border-top: 1px dotted #555;  
+  border-bottom: 1px dotted #555;  
+  border-left: 1px dotted #555;    
+}
+
+.button.active{
+  background-color: #AAA; 
+  color: #444;
+  border: none;
+}
+
+.button.inactive {
+	color: #414141; 
+  border-left: 1px dotted #444; 	
+}
+
+.button.left {
+	margin-left: 5px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-bottomleft: 2px; 
+}
+
+.button.right {
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;  
+  border-right: 1px solid #555;    
+}
+
+a {
+	color: #777;
+}
+
+#tabs {
+	margin-bottom: 35px;
+}
+
+ul {
+	float: left;
+	margin-right: 40px;
+}
+
+li {
+	display: inline;
+	margin-left: -4px;
+}
+
+li span {
+	font-size: 15px;
+	color: #888;
+	margin-right: 12px;
+	margin-left: 5px;
+}
+
+#fx_chrome {
+	position: relative;
+	z-index: -1;
+	opacity: .2;
+}
