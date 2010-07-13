@@ -51,50 +51,71 @@ html {
   border-right: 1px solid #555;    
 }
 
-#navigation_toolbar {
-	position: absolute; 
-	top: 293px; 
-	left: 78px; 
-	width: 100%;
-}
-
 .overlay {
 	position: relative;
 	float: left;
-	width: 22px;
+	width: 28px;
 	height: 22px;
 	background-color: #2171B5;
 	opacity: .5;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
 }
 
+#firefox_button {
+	position: absolute; 
+	top: 214px; 
+	left: 59px; 
+	height: 17px;
+	width: 91px;
+	-moz-border-radius: 0 0 3px 3px; 
+	-webkit-border-radius: 0 0 3px 3px;
+}
+
+#navigation_toolbar {
+	position: absolute; 
+	top: 267px; 
+	left: 60px; 
+	width: 100%;
+}
+
+#tab_strip {
+	position: absolute; 
+	top: 237px; 
+	left: 60px; 
+	width: 100%;
+}
+
+
 #back { top: -5px; width: 32px; height: 32px; -moz-border-radius: 20px; -webkit-border-radius: 20px; }
-#forward { left: 1px; width: 25px; -moz-border-radius: 0 8px 8px 0; -webkit-border-radius: 0 8px 8px 0; }
-#reload { left: 25px; }
-#stop { left: 37px; }
-#home { left: 49px; }
+#forward { width: 22px; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 8px 8px 0; }
+#reload { left: 20px; }
+#home { left: 28px; }
 
-#site_id { left: 57px; width: 30px; -moz-border-radius: 8px 0 0 8px; -webkit-border-radius: 0 8px 8px 0;}
-#location_bar { left: 58px; width: 508px; }
-#rss { left: 69px; top: 3px; height: 16px; width: 16px; }
-#bookmark_star { left: 73px; top: 3px; height: 16px; width: 16px; }
-#most_visited_drop_down { left: 81px; top: 7px; height: 8px; width: 8px; }
+#site_id { left: 37px; width: 24px; }
+#location_bar { left: 38px; width: 420px; }
+#location_bar_go_button { left: 43px; top: 3px; height: 16px; width: 16px; }
+#most_visited_drop_down { left: 54px; top: 5px; height: 12px; width: 12px; }
 
-#search_engine_drop_down { left: 93px; width: 32px; }
-#search_bar { left: 94px; width: 143px; }
-#search_go_button { left: 95px; }
+#search_engine_drop_down { left: 70px; width: 30px; }
+#search_bar { left: 71px; width: 117px; }
+#search_go_button { left: 72px; width: 23px; }
+#bookmarks_button { left: 81px; width: 32px; }
+#feedback_button { left: 90px; width: 70px; }
 
-#location_bar_go_button { top: 30px; left: -145px; height: 13px; width: 13px; }
+#rss { left: 530px; height: 16px; width: 16px; }
+#bookmark_star { left: 540px; height: 16px; width: 16px; }
 
 h1 {
-  font-size: 40px;
+  font-size: 42px;
   color: #AAA; 
-	margin-bottom: 7px;
+	margin-bottom: 5px;
 }
 
 h2 {
 	font-size: 14px;
 	color: #666;
-	margin: 0 0 30px 2px;
+	margin: 0 0 20px 2px;
 }
 
 a {

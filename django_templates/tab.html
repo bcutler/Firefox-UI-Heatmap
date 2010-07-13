@@ -1,3 +1,77 @@
-<title>(Untitled)</title>
+{% extends "tab_base.html" %}
 
-<div style='height: 1000px; width: 2200px;'></div>
+{% block header %}
+	<h1>Firefox Tab Usage Heatmap</h1>
+	<h2>Based on 10,000 Test Pilot submissions from 5 days in April 2010 - <a href='https://testpilot.mozillalabs.com/testcases/tabswitch/aggregated-data.html' >Study details</a></h2>
+{% endblock %}
+
+{% block filters %}
+	<ul>
+		<li><a href='?ui=load' class="button left active">Load event</a></li>
+		<li><a href='?ui=switch' class="button">Switch event</a></li>
+		<li><a href='?ui=close' class="button right">Close event</a></li>                    
+	</ul>
+	<div style='height: 60px; clear; both;'></div>
+{% endblock %}
+
+{% block content %}
+	<ul id='tabs'>
+		<li><span>2<span></li>
+		<li><a href='?ui=load' class="tab left">Tab 1</a></li>
+		<li><a href='?ui=close' class="tab right">Tab 2</a></li>                    
+	</ul>
+
+	<ul id='tabs'>
+		<li><span>3<span></li>
+		<li><a href='?ui=load' class="tab left">Tab 1</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 2</a></li>
+		<li><a href='?ui=close' class="tab right">Tab 3</a></li>                    
+	</ul>
+
+	<ul id='tabs'>
+		<li><span>4<span></li>	
+		<li><a href='?ui=load' class="tab left">Tab 1</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 2</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 3</a></li>	
+		<li><a href='?ui=close' class="tab right">Tab 4</a></li>                    
+	</ul>
+
+	<ul id='tabs'>
+		<li><span>4<span></li>	
+		<li><a href='?ui=load' class="tab left">Tab 1</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 2</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 3</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 4</a></li>	
+		<li><a href='?ui=close' class="tab right">Tab 5</a></li>                    
+	</ul>
+	
+	<ul id='tabs'>
+		<li><span>5<span></li>	
+		<li><a href='?ui=load' class="tab left">Tab 1</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 2</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 3</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 4</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 5</a></li>				
+		<li><a href='?ui=close' class="tab right">Tab 6</a></li>                    
+	</ul>	
+
+	<ul id='tabs'>
+		<li><span>...<span></li>	                  
+	</ul>
+	
+	<ul id='tabs'>
+		<li><span>10<span></li>	
+		<li><a href='?ui=load' class="tab left">Tab 1</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 2</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 3</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 4</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 5</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 6</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 2</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 3</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 4</a></li>
+		<li><a href='?ui=switch' class="tab">Tab 5</a></li>	
+		<li><a href='?ui=switch' class="tab">Tab 6</a></li>							
+		<li><a href='?ui=close' class="tab right">Tab 7</a></li>                    
+	</ul>	
+{% endblock %}
