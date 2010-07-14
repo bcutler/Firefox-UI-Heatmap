@@ -2,7 +2,7 @@
 
 {% block header %}
 	<h1>Firefox Main Window Heatmap</h1>
-	<h2>Based on ____ Test Pilot submissions from 5 days in _____ 2010 - <a href='' >Study details</a></h2>
+	<h2>Based on ____ Test Pilot submissions from 5 days in July 2010 - <a href='' >Study details</a></h2>
 {% endblock %}
 
 {% block filters %}
@@ -12,8 +12,7 @@
 	</ul>
 	
 	<ul>
-		<li><a href='' class="button left active">All OS</a></li>
-		<li><a href='' class="button">Windows</a></li>
+		<li><a href='' class="button left active">Windows</a></li>
 		<li><a href='' class="button">OS X</a></li>		
 		<li><a href='' class="button right">Linux</a></li>
 	</ul>
@@ -32,25 +31,32 @@
 {% block content %}
 	<div id='content'>		
 		<img src='media/img/fx_4_b1.png' id='fx_chrome' />	
-		<div id='firefox_button' class='overlay'></div><div id='firefox_button_label' class='overlay_label'></div>
+		<div id='firefox_button' class='overlay'>15%</div><div id='firefox_button_label' class='overlay_label'></div>
+		
+		<div id='tab_strip'>
+			<div id='tab_scroll_left' class='overlay'>15%</div><div id='tab_scroll_left_label' class='overlay_label'></div>														
+			<div id='tab_scroll_right' class='overlay'>15%</div><div id='tab_scroll_right_label' class='overlay_label'></div>														
+			<div id='new_tab' class='overlay'>15%</div><div id='new_tab_label' class='overlay_label'></div>														
+			<div id='list_all_tabs' class='overlay'>15%</div><div id='list_all_tabs_label' class='overlay_label'></div>																						
+		</div>		
 		
 		<div id='navigation_toolbar'>
-			<div id='back' class='overlay'></div><div id='back_label' class='overlay_label'></div>
-			<div id='forward' class='overlay'></div><div id='forward_label' class='overlay_label'></div>	
-			<div id='reload' class='overlay'></div><div id='reload_label' class='overlay_label'></div>
+			<div id='back' label='hello!' class='overlay'>15%</div><div id='back_label' class='overlay_label'></div>
+			<div id='forward' class='overlay'>15%</div><div id='forward_label' class='overlay_label'></div>	
+			<div id='reload' class='overlay'>15%</div><div id='reload_label' class='overlay_label'></div>
 			<div id='stop_label' class='overlay_label'></div>
-			<div id='home' class='overlay'></div><div id='home_label' class='overlay_label'></div>	
+			<div id='home' class='overlay'>15%</div><div id='home_label' class='overlay_label'></div>	
 		
-			<div id='site_id' class='overlay'></div><div id='site_id_label' class='overlay_label'></div>						
-			<div id='location_bar' class='overlay'></div><div id='location_bar_label' class='overlay_label'></div>												
-			<div id='location_bar_go_button' class='overlay'></div><div id='location_bar_go_button_label' class='overlay_label'></div>														
-			<div id='most_visited_drop_down' class='overlay'></div><div id='most_visited_drop_down_label' class='overlay_label'></div>	
+			<div id='site_id' class='overlay'>15%</div><div id='site_id_label' class='overlay_label'></div>						
+			<div id='location_bar' class='overlay'>15%</div><div id='location_bar_label' class='overlay_label'></div>												
+			<div id='location_bar_go_button' class='overlay'>15%</div><div id='location_bar_go_button_label' class='overlay_label'></div>														
+			<div id='most_visited_drop_down' class='overlay'>15%</div><div id='most_visited_drop_down_label' class='overlay_label'></div>	
 			
-			<div id='search_engine_drop_down' class='overlay'></div><div id='search_engine_drop_down_label' class='overlay_label'></div>								
-			<div id='search_bar' class='overlay'></div><div id='search_bar_label' class='overlay_label'></div>	
-			<div id='search_go_button' class='overlay'></div><div id='search_go_button_label' class='overlay_label'></div>														
-			<div id='bookmarks_button' class='overlay'></div><div id='bookmarks_button_label' class='overlay_label'></div>														
-			<div id='feedback_button' class='overlay'></div><div id='feedback_button_label' class='overlay_label'></div>														
+			<div id='search_engine_drop_down' class='overlay'>15%</div><div id='search_engine_drop_down_label' class='overlay_label'></div>								
+			<div id='search_bar' class='overlay'>15%</div><div id='search_bar_label' class='overlay_label'></div>	
+			<div id='search_go_button' class='overlay'>15%</div><div id='search_go_button_label' class='overlay_label'></div>														
+			<div id='bookmarks_button' class='overlay'>15%</div><div id='bookmarks_button_label' class='overlay_label'></div>														
+			<div id='feedback_button' class='overlay'>15%</div><div id='feedback_button_label' class='overlay_label'></div>														
 		</div>	
 		
 		<div id='navigation_toolbar_overflow'>
@@ -58,13 +64,6 @@
 			<div id='rss' class='overlay'></div><div id='rss_label' class='overlay_label'></div>		
 			<div id='bookmark_star' class='overlay'></div><div id='bookmark_star_label' class='overlay_label'></div>	
 		</div>	
-		
-		<div id='tab_strip'>
-			<div id='tab_scroll_left' class='overlay'></div><div id='tab_scroll_left_label' class='overlay_label'></div>														
-			<div id='tab_scroll_right' class='overlay'></div><div id='tab_scroll_right_label' class='overlay_label'></div>														
-			<div id='new_tab' class='overlay'></div><div id='new_tab_label' class='overlay_label'></div>														
-			<div id='list_all_tabs' class='overlay'></div><div id='list_all_tabs_label' class='overlay_label'></div>																						
-		</div>
 		
 		<div id='vertical_scroll'>
 			<div id='scroll_vertical_up' class='overlay'></div><div id='scroll_vertical_up_label' class='overlay_label'></div>
