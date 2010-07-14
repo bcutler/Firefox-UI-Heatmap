@@ -6,7 +6,14 @@ html {
 }
 
 #content {
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+#footer {
+	margin: 40px 0 60px 0;
+	text-align: center;
+	font-size: 12px;
+	color: #888;
 }
 
 #fx_chrome {
@@ -69,7 +76,7 @@ html {
 
 #firefox_button {
 	position: absolute; 
-	top: 214px; 
+	top: 204px; 
 	left: 59px; 
 	height: 17px;
 	width: 91px;
@@ -80,28 +87,35 @@ html {
 
 #tab_strip {
 	position: absolute; 
-	top: 236px; 
+	top: 226px; 
 	left: 60px; 
 	width: 100%;
 }
 
 #navigation_toolbar {
 	position: absolute; 
-	top: 267px; 
+	top: 257px; 
+	left: 60px; 
+	width: 100%;
+}
+
+#navigation_toolbar_overflow {
+	position: absolute; 
+	top: 300px; 
 	left: 60px; 
 	width: 100%;
 }
 
 #horizontal_scroll {
 	position: absolute; 
-	top: 928px; 
+	top: 918px; 
 	left: 57px; 
 	width: 100%;
 }
 
 #vertical_scroll {
 	position: absolute; 
-	top: 297px; 
+	top: 287px; 
 	left: 990px; 
 }
 
@@ -126,8 +140,9 @@ html {
 #bookmarks_button { left: 61px; width: 32px; }
 #feedback_button { left: 70px; width: 70px; }
 
-#rss { left: 530px; height: 16px; width: 16px; }
-#bookmark_star { left: 540px; height: 16px; width: 16px; }
+#bookmarks_bar { width: 150px; }
+#rss { left: 291px; width: 90px; }
+#bookmark_star { left: 293px; width: 110px; }
 
 #scroll_horizontal_left { height: 17px; width: 22px; line-height: 1.7em; }
 #scroll_horizontal_bar { left: 262px; width: 332px; height: 17px; line-height: 1.7em; }
