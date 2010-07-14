@@ -78,6 +78,13 @@ html {
 	line-height: 1.8em;
 }
 
+#tab_strip {
+	position: absolute; 
+	top: 236px; 
+	left: 60px; 
+	width: 100%;
+}
+
 #navigation_toolbar {
 	position: absolute; 
 	top: 267px; 
@@ -85,11 +92,17 @@ html {
 	width: 100%;
 }
 
-#tab_strip {
+#horizontal_scroll {
 	position: absolute; 
-	top: 236px; 
-	left: 60px; 
+	top: 928px; 
+	left: 57px; 
 	width: 100%;
+}
+
+#vertical_scroll {
+	position: absolute; 
+	top: 297px; 
+	left: 990px; 
 }
 
 #tab_scroll_left { }
@@ -115,6 +128,14 @@ html {
 
 #rss { left: 530px; height: 16px; width: 16px; }
 #bookmark_star { left: 540px; height: 16px; width: 16px; }
+
+#scroll_horizontal_left { height: 17px; width: 22px; line-height: 1.7em; }
+#scroll_horizontal_bar { left: 262px; width: 332px; height: 17px; line-height: 1.7em; }
+#scroll_horizontal_right { left: 560px; height: 17px; width: 22px; line-height: 1.7em; }
+
+#scroll_vertical_up { height: 17px; width: 22px; line-height: 1.7em; }
+#scroll_vertical_bar { top: 109px; height: 363px; width: 22px; line-height: 37em; }
+#scroll_vertical_down { top: 228px; width: 22px; line-height: 1.7em; }
 
 h1 {
   font-size: 42px;
