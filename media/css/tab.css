@@ -87,11 +87,12 @@ a {
 li {
 	display: inline;
 	margin-left: -4px;
+	font-size: 11px;
 }
 
 li span {
 	font-size: 15px;
 	color: #888;
-	margin-right: 12px;
+	margin-right: 4px;
 	margin-left: 5px;
 }

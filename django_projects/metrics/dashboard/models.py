@@ -2,13 +2,14 @@ from django.db import models
 
 # Create your models here.
 class Heatmap(models.Model):
-	item_name = models.CharField(max_length=100)
-	freq = models.IntegerField()
-	freq_per_user = models.DecimalField(max_digits=5, decimal_places=5)
-	perc = models.DecimalField(max_digits=5, decimal_places=5)	
-	in_table = models.BooleanField()
-	os = models.CharField(max_length=100)
-	skill = models.CharField(max_length=100)
+	item = models.CharField(max_length=100)
+	category= models.CharField(max_length=100)	
+	os = models.CharField(max_length=30)		
+	skill = models.CharField(max_length=30)	
+	time_on_web = models.IntegerField()	
+	perc = models.DecimalField(max_digits=5, decimal_places=5)
+	clicks_per_user = models.DecimalField(max_digits=5, decimal_places=5)
+	clicks_per_user_median =models.DecimalField(max_digits=5, decimal_places=5)
 	
 	def heat(self):
     #$normalize = (log($freq+1)/log($max))
