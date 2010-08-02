@@ -1,8 +1,9 @@
 html {
-	background-color: #333;
+	background-color: #32393E;
 	color: white;
 	margin: 50px 50px;
 	font-family: 'Droid Sans', sans-serif; 
+	width: 1250px;
 }
 
 #content {
@@ -16,14 +17,21 @@ html {
 	color: #888;
 }
 
+#items_list {
+	float: right;
+	font-size: 11px;
+	color: #777;
+}
+
 #fx_chrome {
 	position: relative;
+	margin-top: 3px;
 	z-index: -1;
 	opacity: .2;
 }
 
 .button {
-  background-color: #333;
+  background-color: #32393E;
   border:medium none;
   color:#AAA;
   cursor:pointer;
@@ -36,7 +44,7 @@ html {
 }
 
 .button.active{
-  background-color: #AAA; 
+  background-color: #CCC; 
   color: #444;
   border: none;
 }
@@ -89,7 +97,7 @@ html {
 	position: absolute; 
 	top: 226px; 
 	left: 60px; 
-	width: 100%;
+	width: 50%;
 }
 
 #navigation_toolbar {
@@ -103,7 +111,7 @@ html {
 	position: absolute; 
 	top: 300px; 
 	left: 60px; 
-	width: 100%;
+	width: 50%;
 }
 
 #horizontal_scroll {
@@ -154,13 +162,13 @@ html {
 
 h1 {
   font-size: 42px;
-  color: #AAA; 
-	margin-bottom: 5px;
+  color: #CCC; 
+	margin-bottom: 2px;
 }
 
 h2 {
 	font-size: 14px;
-	color: #666;
+	color: #777;
 	margin: 0 0 20px 2px;
 }
 

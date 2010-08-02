@@ -29,12 +29,18 @@
 
 
 {% block content %}
-	<div id='content'>		
+	<div id='content'>	
+		<div id='items_list'>
+			{% for item in items %}
+				{{ item.id }} {{ item.item }} <br />
+			{% endfor %}
+		</div>	
+			
 		<img src='media/img/fx_4_b1.png' id='fx_chrome' />	
-		<div style='background-color: ;' id='firefox_button' class='overlay'>15%</div><div id='firefox_button_label' class='overlay_label'></div>
+		<div style='background-color: ;' id='firefox_button' class='overlay'>{{ firefox_button.perc }}</div><div id='firefox_button_label' class='overlay_label'></div>
 		
 		<div id='tab_strip'>
-			<div style='background-color: ;' id='tab_scroll_left' class='overlay'>15%</div><div id='tab_scroll_left_label' class='overlay_label'></div>														
+			<div style='background-color: ;' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}</div><div id='tab_scroll_left_label' class='overlay_label'></div>														
 			<div style='background-color: ;' id='tab_scroll_right' class='overlay'>15%</div><div id='tab_scroll_right_label' class='overlay_label'></div>														
 			<div style='background-color: ;' id='new_tab' class='overlay'>15%</div><div id='new_tab_label' class='overlay_label'></div>														
 			<div style='background-color: ;' id='list_all_tabs' class='overlay'>15%</div><div id='list_all_tabs_label' class='overlay_label'></div>																						
@@ -80,5 +86,6 @@
 		<div id='status_bar'>
 		</div>							
 	</div>				
+	
 {% endblock %}
 
