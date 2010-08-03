@@ -1,9 +1,9 @@
 html {
 	background-color: #32393E;
 	color: white;
-	margin: 50px 50px;
+	margin: 50px 40px;
 	font-family: 'Droid Sans', sans-serif; 
-	width: 1280px;
+	width: 1335px;
 }
 
 #content {
@@ -72,7 +72,7 @@ html {
 	width: 28px;
 	height: 22px;
 	background-color: #2171B5;
-	opacity: .5;
+	opacity: .6;
 	-moz-border-radius: 3px; 
 	-webkit-border-radius: 3px;
 	font-size: 10px;
@@ -85,7 +85,7 @@ html {
 #firefox_button {
 	position: absolute; 
 	top: 204px; 
-	left: 59px; 
+	left: 49px; 
 	height: 17px;
 	width: 91px;
 	-moz-border-radius: 0 0 3px 3px; 
@@ -96,35 +96,35 @@ html {
 #tab_strip {
 	position: absolute; 
 	top: 226px; 
-	left: 60px; 
+	left: 50px; 
 	width: 50%;
 }
 
 #navigation_toolbar {
 	position: absolute; 
 	top: 257px; 
-	left: 60px; 
+	left: 50px; 
 	width: 100%;
 }
 
 #navigation_toolbar_overflow {
 	position: absolute; 
 	top: 300px; 
-	left: 60px; 
+	left: 50px; 
 	width: 50%;
 }
 
 #horizontal_scroll {
 	position: absolute; 
 	top: 918px; 
-	left: 57px; 
+	left: 47px; 
 	width: 100%;
 }
 
 #vertical_scroll {
 	position: absolute; 
 	top: 287px; 
-	left: 990px; 
+	left: 980px; 
 }
 
 #tab_scroll_left { }
@@ -191,4 +191,15 @@ li span {
 	color: #888;
 	margin-right: 12px;
 	margin-left: 5px;
+}
+
+.perc_box {
+	float: left;
+	color:#EFEFEF;
+	font-size:10px;
+	margin:0 10px 0 0;
+	padding:2px 0;
+	text-align:center;
+	width:34px;
+	opacity: .6;	
 }

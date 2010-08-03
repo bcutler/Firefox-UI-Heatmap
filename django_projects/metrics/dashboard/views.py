@@ -25,12 +25,22 @@ def tab(request):
 	return HttpResponse(t.render(c))
 
 def heatmap(request):
-	title = 'Firefox Tab Heatmap'
-	items = Heatmap.objects.all()
+	title = 'Firefox Heatmap'
+	items = Heatmap.objects.filter(os = 1, skill = 1)   #change to windows, all
+	items_beginner = Heatmap.objects.filter(os = 1, skill = 1)  
+	items_intermediate = Heatmap.objects.filter(os = 1, skill = 1)
+	items_advanced = Heatmap.objects.filter(os = 1, skill = 1)  
+	x = items_beginner[1].perc
 	
 	for item in items:
+		idx = item.id - 1
 		item.color = item.heat_perc()
-		item.perc = round((item.perc * 100))
+		item.perc = "%0.0f" % (item.perc * 100)
+		
+		item.beginner_perc = items_beginner[idx].perc
+		item.intermediate_perc = items_intermediate[idx].perc		
+		item.advanced_perc = items_advanced[idx].perc				
+		
 			
 	t = loader.get_template('heatmap.html')
 	c = Context({ 'title': title,
