@@ -3,7 +3,7 @@ html {
 	color: white;
 	margin: 50px 50px;
 	font-family: 'Droid Sans', sans-serif; 
-	width: 1250px;
+	width: 1280px;
 }
 
 #content {
@@ -19,7 +19,7 @@ html {
 
 #items_list {
 	float: right;
-	font-size: 11px;
+	font-size: 12px;
 	color: #777;
 }
 
@@ -142,7 +142,7 @@ html {
 #location_bar_go_button { left: 40px; width: 22px; }
 #most_visited_drop_down { left: 42px; width: 22px; }
 
-#search_engine_drop_down { left: 51px; width: 30px; }
+#search_drop_down { left: 51px; width: 30px; }
 #search_bar { left: 52px; width: 119px; }
 #search_go_button { left: 53px; width: 23px; }
 #bookmarks_button { left: 61px; width: 32px; }
@@ -152,13 +152,13 @@ html {
 #rss { left: 291px; width: 90px; }
 #bookmark_star { left: 293px; width: 110px; }
 
-#scroll_horizontal_left { height: 17px; width: 22px; line-height: 1.7em; }
+#scroll_left { height: 17px; width: 22px; line-height: 1.7em; }
 #scroll_horizontal_bar { left: 262px; width: 332px; height: 17px; line-height: 1.7em; }
-#scroll_horizontal_right { left: 560px; height: 17px; width: 22px; line-height: 1.7em; }
+#scroll_right { left: 560px; height: 17px; width: 22px; line-height: 1.7em; }
 
-#scroll_vertical_up { height: 17px; width: 22px; line-height: 1.7em; }
+#scroll_up { height: 17px; width: 22px; line-height: 1.7em; }
 #scroll_vertical_bar { top: 109px; height: 363px; width: 22px; line-height: 37em; }
-#scroll_vertical_down { top: 228px; width: 22px; line-height: 1.7em; }
+#scroll_down { top: 228px; width: 22px; line-height: 1.7em; }
 
 h1 {
   font-size: 42px;
