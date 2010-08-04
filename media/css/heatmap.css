@@ -30,6 +30,19 @@ html {
 	opacity: .2;
 }
 
+#combined_menu_wrapper {
+	display: none;
+}
+
+#combined_menu {
+	position: absolute;
+	top: 222px;
+	left: 50px;
+	height: 220px;
+	opacity: .95;
+	z-index: 1;
+}
+
 .button {
   background-color: #32393E;
   border:medium none;
@@ -80,6 +93,21 @@ html {
 	text-align: center;
 	line-height: 2.3em;
 	cursor: pointer;
+}
+
+.overlay_menu {
+	position: absolute;
+	background-color: #2171B5;	
+	z-index: 3;
+	float: left;
+	left: 52px;
+	width: 150px;
+	height: 19px;
+	opacity: .6;
+	font-size: 10px;
+	color: #EEE;
+	text-align: right;
+	line-height: 2.3em;
 }
 
 #firefox_button {
@@ -134,6 +162,7 @@ html {
 
 #back { top: -5px; width: 32px; height: 32px; -moz-border-radius: 20px; -webkit-border-radius: 20px; line-height: 3.4em; }
 #forward { width: 22px; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 8px 8px 0; }
+#recent_history_drop_down { display: none; width: 18px; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 8px 8px 0; }
 #reload { left: 20px; }
 #home { left: 28px; }
 
@@ -159,6 +188,24 @@ html {
 #scroll_up { height: 17px; width: 22px; line-height: 1.7em; }
 #scroll_vertical_bar { top: 109px; height: 363px; width: 22px; line-height: 37em; }
 #scroll_down { top: 228px; width: 22px; line-height: 1.7em; }
+
+#new_window { top: 225px; }
+#save_page_as { top: 249px; }
+#send_link { top: 269px; }
+#print { top: 289px; }
+#find_in_this_page { top: 309px; }
+#history { top: 333px; }
+#customize { top: 356px; }
+#options { top: 376px; }
+#help { top: 396px; }
+#exit { top: 421px; }
+
+.overlay_label.demo {
+	display: block;
+	background-color: white;
+	height: 150px;
+	width: 250px;
+}
 
 h1 {
   font-size: 42px;

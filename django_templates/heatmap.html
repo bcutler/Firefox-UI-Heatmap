@@ -34,7 +34,7 @@
 			<ul>
 				{% for item in items %}
 					<li>
-						<div class='perc_box' style='background-color: {{ item.color }};'>{{ item.perc }}%</div>
+						<div class='perc_box' style='background-color: {{ item.color }};'>{{ item.perc }}</div>
 						{{ item.item }}
 						<div style='height:4px;'></div>
 					</li>						
@@ -43,93 +43,112 @@
 		</div>	
 			
 		<img src='media/img/fx_4_b1.png' id='fx_chrome' />	
-		<div style='background-color: {{ firefox_button.color }};' id='firefox_button' class='overlay'>{{ firefox_button.perc }}%</div>
+		
+		<div id='combined_menu_wrapper'>
+			<img src='media/img/combined_menu.png' id='combined_menu' />	
+			<div style='background-color: {{ new_window.color }};' id='new_window' class='overlay_menu'>{{ new_window.perc }}</div>
+			<div style='background-color: {{ save_page_as.color }};' id='save_page_as' class='overlay_menu'>{{ save_page_as.perc }}</div>
+			<div style='background-color: {{ send_link.color }};' id='send_link' class='overlay_menu'>{{ send_link.perc }}</div>
+			<div style='background-color: {{ print.color }};' id='print' class='overlay_menu'>{{ print.perc }}</div>									
+			<div style='background-color: {{ find_in_this_page.color }};' id='find_in_this_page' class='overlay_menu'>{{ find_in_this_page.perc }}</div>									
+			<div style='background-color: {{ history.color }};' id='history' class='overlay_menu'>{{ history.perc }}</div>									
+			<div style='background-color: {{ customize.color }};' id='customize' class='overlay_menu'>{{ customize.perc }}</div>									
+			<div style='background-color: {{ options.color }};' id='options' class='overlay_menu'>{{ options.perc }}</div>
+			<div style='background-color: {{ help.color }};' id='help' class='overlay_menu'>{{ help.perc }}</div>
+			<div style='background-color: {{ exit.color }};' id='exit' class='overlay_menu'>{{ exit.perc }}</div>					
+		</div>					
+
+		<div style='background-color: {{ firefox_button.color }};' id='firefox_button' class='overlay' onMouseOver='showDiv("combined_menu_wrapper");' onMouseOut='hideDiv("combined_menu_wrapper");'>{{ firefox_button.perc }}</div>
 		<div id='firefox_button_label' class='overlay_label'></div>
+
 		
 		<div id='tab_strip'>
-			<div style='background-color: {{ tab_scroll_left.color }};' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}%</div>
-			<div style='background-color: {{ tab_scroll_left.color }}; display: none;' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}%</div>
+			<div style='background-color: {{ tab_scroll_left.color }};' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}</div>
+			<div style='background-color: {{ tab_scroll_left.color }}; display: none;' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}</div>
 			<div id='tab_scroll_left_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ tab_scroll_right.color }};' id='tab_scroll_right' class='overlay'>{{ tab_scroll_right.perc }}%</div>
+			<div style='background-color: {{ tab_scroll_right.color }};' id='tab_scroll_right' class='overlay'>{{ tab_scroll_right.perc }}</div>
 			<div id='tab_scroll_right_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ new_tab_button.color }};' id='new_tab' class='overlay'>{{ new_tab_button.perc }}%</div>
+			<div style='background-color: {{ new_tab_button.color }};' id='new_tab' class='overlay'>{{ new_tab_button.perc }}</div>
 			<div id='new_tab_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ list_all_tabs.color }};' id='list_all_tabs' class='overlay'>{{ list_all_tabs.perc }}%</div>
+			<div style='background-color: {{ list_all_tabs.color }};' id='list_all_tabs' class='overlay'>{{ list_all_tabs.perc }}</div>
 			<div id='list_all_tabs_label' class='overlay_label'></div>																						
 		</div>		
 		
 		<div id='navigation_toolbar'>
-			<div style='background-color: {{ back.color }};' id='back' class='overlay'>{{ back.perc }}%</div>
+			<div style='background-color: {{ back.color }};' id='back' class='overlay'>{{ back.perc }}</div>
 			<div id='back_label' class='overlay_label'></div>
 			
-			<div style='background-color: {{ forward.color }};' id='forward' class='overlay'>{{ forward.perc }}%</div>
+			<div style='background-color: {{ forward.color }};' id='forward' class='overlay'>{{ forward.perc }}</div>
 			<div id='forward_label' class='overlay_label'></div>	
 			
-			<div style='background-color: {{ reload_button.color }};' id='reload' class='overlay'>{{ reload_button.perc }}%</div>
+			<div style='background-color: {{ recent_history.color }};' id='recent_history_drop_down' class='overlay'>{{ recent_history_drop_down.perc }}</div>
+			<div id='recent_history_drop_down_label' class='overlay_label'></div>				
+			
+			<div style='background-color: {{ reload_button.color }};' id='reload' class='overlay'>{{ reload_button.perc }}</div>
 			<div id='reload_label' class='overlay_label'></div>
 			
 			<div id='stop_label' class='overlay_label'></div>
 			
-			<div style='background-color: {{ home.color }};' id='home' class='overlay'>{{ home.perc }}%</div>
+			<div style='background-color: {{ home.color }};' id='home' class='overlay'>{{ home.perc }}</div>
 			<div id='home_label' class='overlay_label'></div>	
 		
-			<div style='background-color: {{ site_id_normal.color }};' id='site_id' class='overlay'>{{ site_id_normal.perc }}%</div>
+			<div style='background-color: {{ site_id_normal.color }};' id='site_id' class='overlay'>{{ site_id_normal.perc }}</div>
 			<div id='site_id_label' class='overlay_label'></div>						
 			
-			<div style='background-color: {{ url_enter_key.color }};' id='location_bar' class='overlay'>{{ url_enter_key.perc }}%</div>
+			<div style='background-color: {{ url_enter_key.color }};' id='location_bar' class='overlay'>{{ url_enter_key.perc }}</div>
 			<div id='location_bar_label' class='overlay_label'></div>												
 			
-			<div style='background-color: {{ url_go_button.color }};' id='location_bar_go_button' class='overlay'>{{ url_go_button.perc }}%</div>
+			<div style='background-color: {{ url_go_button.color }};' id='location_bar_go_button' class='overlay'>{{ url_go_button.perc }}</div>
 			<div id='location_bar_go_button_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ most_visited_drop_down.color }};' id='most_visited_drop_down' class='overlay'>{{ most_visited_drop_down.perc }}%</div>
+			<div style='background-color: {{ most_visited_drop_down.color }};' id='most_visited_drop_down' class='overlay'>{{ most_visited_drop_down.perc }}</div>
 			<div id='most_visited_drop_down_label' class='overlay_label'></div>	
 			
-			<div style='background-color: {{ search_drop_down.color }};' id='search_drop_down' class='overlay'>{{ search_drop_down.perc }}%</div>
+			<div style='background-color: {{ search_drop_down.color }};' id='search_drop_down' class='overlay'>{{ search_drop_down.perc }}</div>
 			<div id='search_engine_drop_down_label' class='overlay_label'></div>								
 			
-			<div style='background-color: {{ search_enter_key.color }};' id='search_bar' class='overlay'>{{ search_enter_key.perc }}%</div>
+			<div style='background-color: {{ search_enter_key.color }};' id='search_bar' class='overlay'>{{ search_enter_key.perc }}</div>
 			<div id='search_bar_label' class='overlay_label'></div>	
 			
-			<div style='background-color: {{ search_go_button.color }};' id='search_go_button' class='overlay'>{{ search_go_button.perc }}%</div>
+			<div style='background-color: {{ search_go_button.color }};' id='search_go_button' class='overlay'>{{ search_go_button.perc }}</div>
 			<div id='search_go_button_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ bookmarks_button.color }};' id='bookmarks_button' class='overlay'>{{ bookmarks_button.perc }}%</div>
+			<div style='background-color: {{ bookmarks_button.color }};' id='bookmarks_button' class='overlay'>{{ bookmarks_button.perc }}</div>
 			<div id='bookmarks_button_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ feedback_button.color }};' id='feedback_button' class='overlay'>{{ feedback_button.perc }}%</div>
+			<div style='background-color: {{ feedback_button.color }};' id='feedback_button' class='overlay'>{{ feedback_button.perc }}</div>
 			<div id='feedback_button_label' class='overlay_label'></div>														
 		</div>	
 		
 		<div id='navigation_toolbar_overflow'>
-			<div style='background-color: {{ bookmarks_bar.color }};' id='bookmarks_bar' class='overlay'>Bookmark Toolbar {{ bookmarks_bar.perc }}%</div>
+			<div style='background-color: {{ bookmarks_bar.color }};' id='bookmarks_bar' class='overlay'>Bookmark Toolbar {{ bookmarks_bar.perc }}</div>
 			<div id='bookmarks_bar_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ rss.color }};' id='rss' class='overlay'>RSS Icon {{ rss.perc }}%</div>
+			<div style='background-color: {{ rss.color }};' id='rss' class='overlay'>RSS Icon {{ rss.perc }}</div>
 			<div id='rss_label' class='overlay_label'></div>		
 			
-			<div style='background-color: {{ bookmark_star.color }};' id='bookmark_star' class='overlay'>Bookmark Star {{ bookmark_star.perc }}%</div>
+			<div style='background-color: {{ bookmark_star.color }};' id='bookmark_star' class='overlay'>Bookmark Star {{ bookmark_star.perc }}</div>
 			<div id='bookmark_star_label' class='overlay_label'></div>	
 		</div>	
 		
 		<div id='vertical_scroll'>
-			<div style='background-color: {{ scroll_up.color }};' id='scrol_up' class='overlay'>{{ scroll_up.perc }}%</div>
+			<div style='background-color: {{ scroll_up.color }};' id='scrol_up' class='overlay'>{{ scroll_up.perc }}</div>
 			<div id='scroll_vertical_up_label' class='overlay_label'></div>
 			
-			<div style='background-color: {{ scroll_vertical_bar.color }};' id='scroll_vertical_bar' class='overlay'>{{ scroll_vertical_bar.perc }}%</div>
+			<div style='background-color: {{ scroll_vertical_bar.color }};' id='scroll_vertical_bar' class='overlay'>{{ scroll_vertical_bar.perc }}</div>
 			<div id='scroll_vertical_bar_label' class='overlay_label'></div>
 			
-			<div style='background-color: {{ scroll_down.color }};' id='scroll_down' class='overlay'>{{ scroll_down.perc }}%</div>
+			<div style='background-color: {{ scroll_down.color }};' id='scroll_down' class='overlay'>{{ scroll_down.perc }}</div>
 			<div id='scroll_vertical_down_label' class='overlay_label'></div>																													
 		</div>			
 
 		<div id='horizontal_scroll'>
-			<div style='background-color: {{ scroll_left.color }};' id='scroll_left' class='overlay'>{{ scroll_left.perc }}%</div><div id='scroll_horizontal_up_label' class='overlay_label'></div>
-			<div style='background-color: {{ scroll_horizontal_bar.color }};' id='scroll_horizontal_bar' class='overlay'>{{ scroll_horizontal_bar.perc }}%</div><div id='scroll_horizontal_bar_label' class='overlay_label'></div>
-			<div style='background-color: {{ scroll_right.color }};' id='scroll_right' class='overlay'>{{ scroll_right.perc }}%</div><div id='scroll_horizontal_down_label' class='overlay_label'></div>								
+			<div style='background-color: {{ scroll_left.color }};' id='scroll_left' class='overlay'>{{ scroll_left.perc }}</div><div id='scroll_horizontal_up_label' class='overlay_label'></div>
+			<div style='background-color: {{ scroll_horizontal_bar.color }};' id='scroll_horizontal_bar' class='overlay'>{{ scroll_horizontal_bar.perc }}</div><div id='scroll_horizontal_bar_label' class='overlay_label'></div>
+			<div style='background-color: {{ scroll_right.color }};' id='scroll_right' class='overlay'>{{ scroll_right.perc }}</div><div id='scroll_horizontal_down_label' class='overlay_label'></div>								
 		</div>
 		
 		<div id='status_bar'>
