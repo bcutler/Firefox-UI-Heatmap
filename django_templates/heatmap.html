@@ -2,7 +2,7 @@
 
 {% block header %}
 	<h1>Firefox Main Window Heatmap</h1>
-	<h2>Based on ____ Test Pilot submissions from 5 days in July 2010 - <a href='' >Study details</a></h2>
+	<h2>Based on over 60,000 Test Pilot submissions from 5 days in July 2010 - <a href='' >Study details</a></h2>
 {% endblock %}
 
 {% block filters %}
@@ -11,11 +11,12 @@
 		<li><a href='' class="button right">Clicks per user</a></li>
 	</ul>
 	
+	<!--
 	<ul>
 		<li><a href='' class="button left active">Windows</a></li>
 		<li><a href='' class="button">OS X</a></li>		
 		<li><a href='' class="button right">Linux</a></li>
-	</ul>
+	</ul> -->
 	
 	<ul>
 		<li><a href='' class="button left active">All Skills</a></li>
@@ -57,11 +58,19 @@
 			<div style='background-color: {{ help.color }};' id='help' class='overlay_menu'>{{ help.perc }}</div>
 			<div style='background-color: {{ exit.color }};' id='exit' class='overlay_menu'>{{ exit.perc }}</div>					
 		</div>					
+		
+		<div id='bookmarks_menu_wrapper'>
+			<img src='media/img/bookmarks_menu.png' id='bookmarks_menu' />	
+			<div style='background-color: {{ bookmark_all_tabs.color }};' id='bookmark_all_tabs' class='overlay_bookmarks_menu'>{{ bookmark_all_tabs.perc }}</div>				
+			<div style='background-color: {{ organize_bookmarks.color }};' id='organize_bookmarks' class='overlay_bookmarks_menu'>{{ organize_bookmarks.perc }}</div>				
+			<div style='background-color: {{ view_bookmarks_toolbar.color }};' id='view_bookmarks_toolbar' class='overlay_bookmarks_menu'>{{ view_bookmarks_toolbar.perc }}</div>				
+			<div style='background-color: {{ show_in_sidebar.color }};' id='show_in_sidebar' class='overlay_bookmarks_menu'>{{ show_in_sidebar.perc }}</div>				
+			<div style='background-color: {{ bookmark_item.color }};' id='bookmark_item' class='overlay_bookmarks_menu'>{{ bookmark_item.perc }}</div>				
+		</div>
 
 		<div style='background-color: {{ firefox_button.color }};' id='firefox_button' class='overlay' onMouseOver='showDiv("combined_menu_wrapper");' onMouseOut='hideDiv("combined_menu_wrapper");'>{{ firefox_button.perc }}</div>
 		<div id='firefox_button_label' class='overlay_label'></div>
 
-		
 		<div id='tab_strip'>
 			<div style='background-color: {{ tab_scroll_left.color }};' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}</div>
 			<div style='background-color: {{ tab_scroll_left.color }}; display: none;' id='tab_scroll_left' class='overlay'>{{ tab_scroll_left.perc }}</div>
@@ -116,7 +125,7 @@
 			<div style='background-color: {{ search_go_button.color }};' id='search_go_button' class='overlay'>{{ search_go_button.perc }}</div>
 			<div id='search_go_button_label' class='overlay_label'></div>														
 			
-			<div style='background-color: {{ bookmarks_button.color }};' id='bookmarks_button' class='overlay'>{{ bookmarks_button.perc }}</div>
+			<div style='background-color: {{ bookmarks_button.color }};' id='bookmarks_button' class='overlay' onMouseOver='showDiv("bookmarks_menu_wrapper");' onMouseOut='hideDiv("bookmarks_menu_wrapper");'>{{ bookmarks_button.perc }}</div>
 			<div id='bookmarks_button_label' class='overlay_label'></div>														
 			
 			<div style='background-color: {{ feedback_button.color }};' id='feedback_button' class='overlay'>{{ feedback_button.perc }}</div>

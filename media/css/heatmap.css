@@ -43,6 +43,19 @@ html {
 	z-index: 1;
 }
 
+#bookmarks_menu_wrapper {
+	display: none;
+}
+
+#bookmarks_menu {
+	position: absolute;
+	top: 280px;
+	left: 883px;
+	height: 290px;
+	opacity: .95;
+	z-index: 1;
+}
+
 .button {
   background-color: #32393E;
   border:medium none;
@@ -93,21 +106,6 @@ html {
 	text-align: center;
 	line-height: 2.3em;
 	cursor: pointer;
-}
-
-.overlay_menu {
-	position: absolute;
-	background-color: #2171B5;	
-	z-index: 3;
-	float: left;
-	left: 52px;
-	width: 150px;
-	height: 19px;
-	opacity: .6;
-	font-size: 10px;
-	color: #EEE;
-	text-align: right;
-	line-height: 2.3em;
 }
 
 #firefox_button {
@@ -189,6 +187,21 @@ html {
 #scroll_vertical_bar { top: 109px; height: 363px; width: 22px; line-height: 37em; }
 #scroll_down { top: 228px; width: 22px; line-height: 1.7em; }
 
+.overlay_menu {
+	position: absolute;
+	background-color: #2171B5;	
+	z-index: 3;
+	float: left;
+	left: 52px;
+	width: 150px;
+	height: 19px;
+	opacity: .6;
+	font-size: 10px;
+	color: #EEE;
+	text-align: right;
+	line-height: 2.3em;
+}
+
 #new_window { top: 225px; }
 #save_page_as { top: 249px; }
 #send_link { top: 269px; }
@@ -199,6 +212,27 @@ html {
 #options { top: 376px; }
 #help { top: 396px; }
 #exit { top: 421px; }
+
+.overlay_bookmarks_menu {
+	position: absolute;
+	background-color: #2171B5;	
+	z-index: 3;
+	float: left;
+	left: 884px;
+	width: 220px;
+	height: 19px;
+	opacity: .6;
+	font-size: 10px;
+	color: #EEE;
+	text-align: right;
+	line-height: 2.3em;
+}
+
+#bookmark_all_tabs { top: 283px; }
+#organize_bookmarks { top: 303px; }
+#view_bookmarks_toolbar { top: 327px; }
+#show_in_sidebar { top: 347px; }
+#bookmark_item { top: 510px; height: 59px; }
 
 .overlay_label.demo {
 	display: block;

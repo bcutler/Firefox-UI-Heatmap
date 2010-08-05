@@ -35,7 +35,7 @@ def heatmap(request):
 	for item in items:
 		idx = item.id - 1
 		item.color = item.heat_perc()
-		item.perc = "%0.0f" % (item.perc * 100)
+		item.perc = "%0.0f" % (item.perc * 100) + '%'
 		
 		item.beginner_perc = items_beginner[idx].perc
 		item.intermediate_perc = items_intermediate[idx].perc		
